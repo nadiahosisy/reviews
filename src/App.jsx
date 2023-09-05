@@ -15,9 +15,9 @@ const App = () => {
             <FaQuoteRight />
           </span>
         </div>
-        <h4>{name}</h4>
-        <p>{job}</p>
-        <p>{text}</p>
+        <h4 className="author">{name}</h4>
+        <p className="job">{job}</p>
+        <p className="info">{text}</p>
       </article>
     </main>
   );
