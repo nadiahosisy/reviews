@@ -29,7 +29,8 @@ const App = () => {
     });
   };
   const randomPerson = () => {
-    console.log(math.random());
+    let randomNumber = Math.floor(Math.random() * people.length);
+    console.log(randomNumber);
   };
 
   return (
