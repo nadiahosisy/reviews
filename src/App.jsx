@@ -6,6 +6,9 @@ const App = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
 
+  const nextPerson = () => {};
+  const prevPerson = () => {};
+
   return (
     <main>
       <article className="review">
@@ -18,6 +21,12 @@ const App = () => {
         <h4 className="author">{name}</h4>
         <p className="job">{job}</p>
         <p className="info">{text}</p>
+        <div className="bt-container">
+          <button className="prev-btn" onClick={prevPerson}></button>
+          <button className="next-btn" onClick={nextPerson}></button>
+          <FaChevronLeft />
+          <FaChevronRight />
+        </div>
       </article>
     </main>
   );
