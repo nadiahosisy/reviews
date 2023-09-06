@@ -28,6 +28,9 @@ const App = () => {
       return checkNumber(newIndex);
     });
   };
+  const randomPerson = () => {
+    console.log(math.random());
+  };
 
   return (
     <main>
